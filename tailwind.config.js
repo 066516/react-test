@@ -11,7 +11,9 @@ module.exports = {
         thirdOrgange:"#FFEECA",
         forthOrgange:"#C18606",
         gray:"#918E8E",
-        gray2:"#626060"
+        gray2:"#626060",
+        footorColor:"#323B4B",
+        socialMediaColor:"#434343"
       }
     },
   },

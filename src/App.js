@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './comps/Navbar';
 import Home from './pages/Home';
 import DetailCourse from './pages/DetailCourse';
+import Footer from './comps/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
          <Route path="/detailCourse/:id" element={<DetailCourse />} />
 
       </Routes>
+      <Footer />
     </Router>
   );
 }

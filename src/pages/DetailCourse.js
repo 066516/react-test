@@ -22,7 +22,6 @@ function DetailCourse() {
             }
 
                 setCourse(data.course); // Update state with the fetched data
-                console.log(data.course);
                 
             } catch (error) {
                 console.error('Error fetching course:', error); // Handle errors
@@ -30,7 +29,6 @@ function DetailCourse() {
         };
         
         fetchCourse(); // Call the async function
-        console.log(course);
     }, [id]);
 
     if (!course) {
