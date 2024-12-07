@@ -9,7 +9,9 @@ module.exports = {
         primaryOrgange:"#FFC446",
         secondaryOrgange:"#C18606",
         thirdOrgange:"#FFEECA",
+        forthOrgange:"#C18606",
         gray:"#918E8E",
+        gray2:"#626060"
       }
     },
   },

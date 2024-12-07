@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { courses as data } from "../data/courses";
+import { Link } from "react-router-dom";
 
 function Home() {
   const [courses, setCourses] = useState(data);
@@ -69,11 +70,13 @@ function Home() {
                     </h2>
                   </div>
                   <div className="flex justify-around mt-4">
-                    <h1
-                         className="bg-primaryOrgange text-white px-4 py-1 rounded-md text-center flex  items-center"
-                    >
-                        تفاصيل
-                    </h1>
+                    <Link to={`/detailCourse/`+course.id}>
+                        <h1
+                            className="bg-primaryOrgange text-white px-4 py-1 rounded-md text-center flex  items-center"
+                        >
+                            تفاصيل
+                        </h1>
+                    </Link>
                     <div>
                         <h1 className="font-bold text-xl" dir="rtl">{course.course_discounted_price} دج</h1>
                         <h2 className="text-gray line-through" dir="rtl">{course.course_original_price} دج</h2>
